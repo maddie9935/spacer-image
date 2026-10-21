@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finals week at the library (spacer images error)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    if (location.hash === "#show-spacers") document.documentElement.classList.add("show-spacers");
+    window.addEventListener("hashchange", function () {
+      document.documentElement.classList.toggle("show-spacers", location.hash === "#show-spacers");
+    });
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="inner">
+      <span class="mark" aria-hidden="true"></span>
+      <a class="site-name" href="index.html">Hartwell Library</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Intentional accessibility error: the spacer images on this page have no alt attribute, so screen readers announce their filename. -->
+    <h1>Finals week at the library</h1>
+    <p class="lede">Extended hours, quiet study spaces, and a few study breaks to help you get through the end of the semester.</p>
+    <img class="spacer" src="spacer.gif" width="600" height="32">
+
+    <h2>Extended hours</h2>
+    <table class="hours">
+      <caption class="visually-hidden">Library hours during finals week</caption>
+      <thead><tr><th scope="col">Day</th><th scope="col">Hours</th></tr></thead>
+      <tbody>
+        <tr><td>Monday to Thursday</td><td>7 AM to 2 AM</td></tr>
+        <tr><td>Friday</td><td>7 AM to midnight</td></tr>
+        <tr><td>Saturday</td><td>9 AM to midnight</td></tr>
+        <tr><td>Sunday</td><td>10 AM to 2 AM</td></tr>
+      </tbody>
+    </table>
+    <img class="spacer" src="spacer.gif" width="600" height="32">
+
+    <h2>Quiet study spaces</h2>
+    <p>The third and fourth floors are silent study zones all week. Group study rooms on the second floor can be reserved for up to three hours at a time. Reservations open each morning at 7 AM.</p>
+    <img class="spacer" src="spacer.gif" width="600" height="32">
+
+    <h2>Study breaks</h2>
+    <div class="event">
+      <h3>Therapy dogs</h3>
+      <p class="when">Tuesday, 2 to 4 PM, main lobby</p>
+      <p>Take a break with trained therapy dogs from the Riverside Pet Partners program.</p>
+    </div>
+    <img class="spacer" src="spacer.gif" width="600" height="32">
+
+    <div class="event">
+      <h3>Late-night pancakes</h3>
+      <p class="when">Wednesday, 10 PM, first-floor commons</p>
+      <p>Free pancakes and coffee while supplies last.</p>
+    </div>
+  </main>
+
+  <footer>Demo page for accessibility testing. The spacer images on this page have no alt text. <a href="fixed.html">View the fixed version</a>.</footer>
+</body>
+</html>
