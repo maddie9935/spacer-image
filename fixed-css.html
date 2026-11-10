@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finals week at the library (spacer images fixed with CSS)</title>
+  <style>
+    /* Replaces the spacer images: CSS margins create the space between sections */
+    .section {
+      margin-top: 40px;
+    }
+
+    .event {
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main">Skip to main content</a>
+
+  <header>
+    <a href="index.html">Hartwell Library</a>
+  </header>
+
+  <main id="main">
+    <h1>Finals week at the library</h1>
+    <p>Extended hours, quiet study spaces, and a few study breaks to help you get through the end of the semester.</p>
+
+    <section class="section">
+      <h2>Extended hours</h2>
+      <table>
+        <caption>Library hours during finals week</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday to Thursday</td>
+            <td>7 AM to 2 AM</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>7 AM to midnight</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>9 AM to midnight</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>10 AM to 2 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>Quiet study spaces</h2>
+      <p>The third and fourth floors are silent study zones all week. Group study rooms on the second floor can be reserved for up to three hours at a time. Reservations open each morning at 7 AM.</p>
+    </section>
+
+    <section class="section">
+      <h2>Study breaks</h2>
+
+      <div class="event">
+        <h3>Therapy dogs</h3>
+        <p>Tuesday, 2 to 4 PM, main lobby</p>
+        <p>Take a break with trained therapy dogs from the Riverside Pet Partners program.</p>
+      </div>
+
+      <div class="event">
+        <h3>Late-night pancakes</h3>
+        <p>Wednesday, 10 PM, first-floor commons</p>
+        <p>Free pancakes and coffee while supplies last.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Demo page for accessibility testing. The spacer images on this page have been replaced with CSS spacing. <a href="index.html">View the version with errors</a>.</p>
+  </footer>
+</body>
+</html>
